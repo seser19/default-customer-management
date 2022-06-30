@@ -1,0 +1,198 @@
+// 公用的全局布局样式
+@import './mixin'
+*
+  box-sizing border-box
+body
+  font 14px 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'sans-serif'
+  background-color #f4f6f8
+  margin 0 auto
+/* 自定义滚动条样式 */
+::-webkit-scrollbar
+  width 8px
+  height 8px
+::-webkit-scrollbar-track
+  background-color transparent
+::-webkit-scrollbar-thumb
+  background-color rgba(0, 0, 0, 0.3)
+  border-radius 10px
+// 公用的 暂无数据 样式
+[class*='data-none'], [class^='data-none']
+  line-height 180px
+  color $default-font-color
+  font-size 18px
+  text-align center
+// 跳转公用样式
+.jump-link
+  cursor pointer
+  color $default-blue-color
+  text-decoration underline
+// 斑马线 🦓 背景色
+.zebra-bg-color
+  background-color $default-background-color
+// - 底部操作按钮
+.operating-button-list
+  display flex
+  justify-content center
+  padding 10px 0
+  &>div
+    margin 0 20px 0 0
+  &>div:last-child
+    margin 0
+// 文本颜色
+.color-main-red
+  color $default-main-color
+.color-blue
+  color $default-blue-color
+.color-yellow
+  color $default-yellow-color
+.color-cyan
+  color $default-cyan-color
+.color-gray
+  color $dark-font-color
+// 禁止选择
+.not-pointer
+  pointer-events none
+// 页面通用小标题
+.layout-small-title
+  line-height 36px
+  color $default-font-color
+  margin 10px 0
+  font-size 18px
+// 多个详情页面 底部 驳回 按钮
+.reject-button
+  padding: 5px 0
+  display: flex
+  justify-content: center
+// 定制基于 element-ui 的组件样式
+.main-container
+  // 上传文件 照片卡格式的
+  .upload-images-component, .show-images-component
+    display flex
+    flex-wrap wrap
+    .el-upload-list--picture-card
+      display flex
+      flex-wrap wrap
+      .el-upload-list__item
+        overflow inherit
+        margin 0 8px 30px 0
+        [class*='el-icon']
+          color #fff
+        .el-upload-list__item-thumbnail
+          max-height 148px
+        input, .depict
+          position absolute
+          height 24px
+          bottom -(@height + 5px)
+          left 0
+          right 0
+          z-index 1
+          padding 3px 5px
+          width 100%
+        input
+          border-width 1px solid $default-border-color
+        .depict
+          textoneline()
+    .el-upload__tip
+      width 100%
+  .show-images-component
+    // 展示时隐藏掉上传按钮模块
+    .el-upload--picture-card
+      display none
+  // 表单
+  .el-form--label-top
+    .el-form-item--small
+      .el-form-item__content
+        min-height 32px
+    .el-radio
+      margin 0 30px 10px 0
+    .el-form-item__label
+      padding 5px 0
+      line-height 20px
+      color #333333
+      font-size 14px
+      font-weight normal
+    .item
+      color $light-font-color
+  // echarts
+  .echarts
+    width 100% !important
+    height 100% !important
+  // 修复 el-input display inline-block 时容器会比正常的高 1px 的 Bug
+  .el-input--small
+    input
+      display block
+  // 修复 el-input 组件内部 icon 在 IE 浏览器无法点击的 Bug
+  .el-input__suffix
+    pointer-events auto
+  // el-carousel 走马灯样式
+  .el-carousel__container
+    // 左右两个箭头
+    .el-carousel__arrow
+      transform scale(0.6)
+      &:hover
+        background-color $default-blue-color
+    .el-carousel__arrow--left
+      left 0
+    .el-carousel__arrow--right
+      right 0
+    // 中间滚动的容器
+    .el-carousel__item
+      padding 0 (15 + 24)px
+  // 底部的快捷选择按钮
+  .el-carousel__indicators
+    .el-carousel__button
+      width 10px
+      height 10px
+      border-radius 10px
+      background-color #E2E2E2
+      opacity 1
+    &:hover
+      .el-carousel__button
+        opacity 1
+    .el-carousel__indicator.is-active
+      .el-carousel__button
+        // width 48px
+        // height 6px
+        background-color $default-blue-color
+    // vertical-align bottom
+    // margin-top 2px
+    .el-carousel__indicator--horizontal
+      height 34px
+// 自适应设置
+.el-dialog
+  width 65% !important
+@media only screen and (max-width: 768px)
+  .el-dialog
+    width 100% !important
+@media only screen and (min-width: 1200px)
+  .el-dialog
+    width 65% !important
+@media only screen and (min-width: 1920px)
+  .el-dialog
+    width 50% !important
+
+// 顶部通用标题
+.reporting-title {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(218, 226, 237, 1);
+  padding-bottom: 12px;
+  h2 {
+    margin: 0px;
+    margin-right: auto;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgba(57, 60, 65, 1);
+    font-size: 18px;
+    padding-left: 32px;
+  }
+  .btn_back {
+    margin: 0 20px 0 0;
+  }
+}
+
+// 遮罩层级
+.el-loading-mask {
+  z-index: 7;
+}

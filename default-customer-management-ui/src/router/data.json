@@ -1,0 +1,433 @@
+{
+  "msg": "操作成功",
+  "code": 200,
+  "data": [{
+    "name": "informationacquisition",
+    "path": "/data/entry",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "信息采集",
+      "icon": "警情"
+    },
+    "children": [{
+      "name": "alarmentry",
+      "path": "jqxxtb",
+      "component": "data/entry/jqxx/index",
+      "meta": {
+        "title": "警情录入",
+        "icon": "开始"
+      }
+    }, {
+      "name": "recordedalarm",
+      "path": "lsjqxx",
+      "component": "data/entry/jqxx/index-ls",
+      "meta": {
+        "title": "已录警情",
+        "icon": "查询"
+      }
+    }, {
+      "name": "districtpolicesituation",
+      "path": "xqjqxx",
+      "component": "data/jurisdiction/policeSentiment",
+      "meta": {
+        "title": "辖区警情",
+        "icon": "检查"
+      }
+    }, {
+      "name": "dispatchedreport",
+      "path": "cdxxtb",
+      "component": "data/entry/cdxx/index",
+      "meta": {
+        "title": "出动填报",
+        "icon": "消防车"
+      }
+    }, {
+      "name": "recorded",
+      "path": "lscdxx",
+      "component": "data/entry/cdxx/index-ls",
+      "meta": {
+        "title": "已录出动",
+        "icon": "查询"
+      }
+    }, {
+      "name": "districtdispatched",
+      "path": "xqcdxx",
+      "component": "data/jurisdiction/dispatchInformation",
+      "meta": {
+        "title": "辖区出动",
+        "icon": "检查"
+      }
+    }, {
+      "name": "firereporting",
+      "path": "zqxxtb",
+      "component": "data/entry/zqxx/index",
+      "meta": {
+        "title": "火灾填报",
+        "icon": "火灾"
+      }
+    }, {
+      "name": "recordedfire",
+      "path": "lszqxx",
+      "component": "data/entry/zqxx/index-ls",
+      "meta": {
+        "title": "已录火灾",
+        "icon": "查询"
+      }
+    }, {
+      "name": "areafire",
+      "path": "xqzqxx",
+      "component": "data/jurisdiction/fireInformation",
+      "meta": {
+        "title": "辖区火灾",
+        "icon": "检查"
+      }
+    }]
+  }, {
+    "name": "dataaudit",
+    "path": "/data/aduit",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "数据审核",
+      "icon": "审核"
+    },
+    "children": [{
+      "name": "dispatchaudit",
+      "path": "cdxx",
+      "component": "data/aduit/cdxx/index",
+      "meta": {
+        "title": "出动审核",
+        "icon": "审核 (1)"
+      }
+    }, {
+      "name": "audited",
+      "path": "yscd",
+      "component": "data/aduit/cdxx/cdAuditDetail",
+      "meta": {
+        "title": "已审出动",
+        "icon": "审核"
+      }
+    }, {
+      "name": "fireauditing",
+      "path": "zqxx",
+      "component": "data/aduit/zqxx/index",
+      "meta": {
+        "title": "火灾审核",
+        "icon": "审核 (1)"
+      }
+    }, {
+      "name": "fireunderfire",
+      "path": "yshz",
+      "component": "data/aduit/zqxx/zqAuditDetail",
+      "meta": {
+        "title": "已审火灾",
+        "icon": "审核"
+      }
+    }]
+  }, {
+    "name": "statisticalsupervision",
+    "path": "/inspect",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "统计监督",
+      "icon": "检查"
+    },
+    "children": [{
+      "name": "initiatesupervision",
+      "path": "create",
+      "component": "check/create/index",
+      "meta": {
+        "title": "发起监督",
+        "icon": "发起 (2)"
+      }
+    }, {
+      "name": "processsupervision",
+      "path": "deal",
+      "component": "check/deal/index",
+      "meta": {
+        "title": "处理监督",
+        "icon": "处理 (1)"
+      }
+    }]
+  }, {
+    "name": "jobevaluation",
+    "path": "/33",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "工作评价",
+      "icon": "评价"
+    },
+    "children": [{
+      "name": "evaluationinitiated",
+      "path": "development",
+      "component": "loading",
+      "meta": {
+        "title": "评价发起",
+        "icon": "收到"
+      }
+    }, {
+      "name": "evaluationresult",
+      "path": "development",
+      "component": "loading",
+      "meta": {
+        "title": "评价结果",
+        "icon": "收到的"
+      }
+    }]
+  }, {
+    "name": "querystatistics",
+    "path": "/eqw",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "查询统计",
+      "icon": "统计"
+    },
+    "children": [{
+      "name": "dataquery",
+      "path": "dataSeach",
+      "component": "eqw/dataSearch/dataSeach",
+      "meta": {
+        "title": "数据查询",
+        "icon": "skill"
+      }
+    }, {
+      "name": "fixedstatement",
+      "path": "reportSearch",
+      "component": "eqw/reportSearchs",
+      "meta": {
+        "title": "固定报表",
+        "icon": "search"
+      }
+    }, {
+      "name": "customSearch",
+      "path": "customSearch",
+      "component": "eqw/customSearch/customSearch",
+      "meta": {
+        "title": "自定义查询",
+        "icon": "search"
+      }
+    }]
+  }, {
+    "name": "judgementreport",
+    "path": "/efs",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "研判报告",
+      "icon": "研判"
+    },
+    "children": [{
+      "name": "reportlist",
+      "path": "development",
+      "component": "loading",
+      "meta": {
+        "title": "报告列表",
+        "icon": "list"
+      }
+    }, {
+      "name": "reporttemplate",
+      "path": "development",
+      "component": "loading",
+      "meta": {
+        "title": "报告模板",
+        "icon": "tree"
+      }
+    }]
+  }, {
+    "name": "classiccase",
+    "path": "/example",
+    "component": "Layout",
+    "meta": {
+      "title": "典型案例",
+      "icon": "dict"
+    }
+  }, {
+    "name": "systemtools",
+    "path": "/tool",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "系统工具",
+      "icon": "tool"
+    },
+    "children": [{
+      "name": "formconstruction",
+      "path": "gen",
+      "component": "tool/gen/index",
+      "meta": {
+        "title": "表单构建",
+        "icon": "build"
+      }
+    }, {
+      "name": "codegeneration",
+      "path": "/tool/gen",
+      "component": "tool/gen/index",
+      "meta": {
+        "title": "代码生成",
+        "icon": "#"
+      }
+    }, {
+      "name": "systeminterface",
+      "path": "swagger",
+      "component": "tool/swagger/index",
+      "meta": {
+        "title": "系统接口",
+        "icon": "swagger"
+      }
+    }]
+  }, {
+    "path": "/businessManagement",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "业务管理",
+      "icon": "component"
+    },
+    "children": [{
+      "path": "reportPending",
+      "component": "businessManagement/reportPending/index",
+      "meta": {
+        "title": "报告挂起",
+        "icon": "date"
+      }
+    }]
+  }, {
+    "name": "systemmanagement",
+    "path": "/system",
+    "redirect": "noRedirect",
+    "component": "Layout",
+    "alwaysShow": true,
+    "meta": {
+      "title": "系统管理",
+      "icon": "system"
+    },
+    "children": [{
+      "name": "onlineusers",
+      "path": "online",
+      "component": "monitor/online/index",
+      "meta": {
+        "title": "在线用户",
+        "icon": "在线"
+      }
+    }, {
+      "name": "usermanagement",
+      "path": "user",
+      "component": "system/user/index",
+      "meta": {
+        "title": "用户管理",
+        "icon": "用户"
+      }
+    }, {
+      "name": "rolemanagement",
+      "path": "role",
+      "component": "system/role/index",
+      "meta": {
+        "title": "角色管理",
+        "icon": "角色"
+      }
+    }, {
+      "name": "menumanagement",
+      "path": "menu",
+      "component": "system/menu/index",
+      "meta": {
+        "title": "菜单管理",
+        "icon": "菜单"
+      }
+    }, {
+      "name": "vehiclemanagement",
+      "path": "car",
+      "component": "system/car/index",
+      "meta": {
+        "title": "车辆管理",
+        "icon": "消防车"
+      }
+    }, {
+      "name": "unitmanagement",
+      "path": "dept",
+      "component": "system/dept/index",
+      "meta": {
+        "title": "单位管理",
+        "icon": "消防队"
+      }
+    }, {
+      "name": "regionalmanagement",
+      "path": "area",
+      "component": "system/area/index",
+      "meta": {
+        "title": "区域管理",
+        "icon": "地址"
+      }
+    }, {
+      "name": "auditconfiguration",
+      "path": "development",
+      "component": "system/auditProcess/index",
+      "meta": {
+        "title": "审核配置",
+        "icon": "流程"
+      }
+    }, {
+      "name": "dictionarymanagement",
+      "path": "dict",
+      "component": "system/dict/index",
+      "meta": {
+        "title": "字典管理",
+        "icon": "dict"
+      }
+    }, {
+      "name": "specifydata",
+      "path": "dict_data",
+      "component": "system/dict_data/index",
+      "meta": {
+        "title": "字典管理菜单",
+        "icon": "查询"
+      }
+    }, {
+      "name": "noticeannouncement",
+      "path": "notice",
+      "component": "system/notice/index",
+      "meta": {
+        "title": "通知公告",
+        "icon": "公告"
+      }
+    }, {
+      "name": "logmanagement",
+      "path": "log",
+      "redirect": "noRedirect",
+      "component": "system/log/index",
+      "alwaysShow": true,
+      "meta": {
+        "title": "日志管理",
+        "icon": "log"
+      },
+      "children": [{
+        "name": "operationlog",
+        "path": "operlog",
+        "component": "monitor/operlog/index",
+        "meta": {
+          "title": "操作日志",
+          "icon": "form"
+        }
+      }, {
+        "name": "loginlog",
+        "path": "logininfor",
+        "component": "monitor/logininfor/index",
+        "meta": {
+          "title": "登录日志",
+          "icon": "logininfor"
+        }
+      }]
+    }]
+  }]
+}

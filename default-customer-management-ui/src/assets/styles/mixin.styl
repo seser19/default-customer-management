@@ -1,0 +1,47 @@
+$default-main-color = #FB5938
+$default-blue-color = #437FDF
+$default-yellow-color = #FFC108
+$default-cyan-color = #01BCD5
+$default-font-color = #243847
+$default-border-color = rgba(218, 226, 237, 1)
+$default-background-color = #f3fbfe
+$light-font-color = #37394C
+$dark-font-color = #939eab
+// 右侧展示内容
+// 最小高度
+$layout-min-height = calc(100vh - 84px)
+// 容器
+layout-content()
+  padding 10px
+  min-height $layout-min-height
+// 公用带描边的容器
+layout-block()
+  box-shadow 0 0 0 1px $default-border-color inset
+  background-color #fff
+  border-radius 3px
+// 公用标题
+layout-title()
+  line-height 36px
+  color $default-font-color
+  padding 14px 20px 2px 20px
+  font-size 18px
+  box-shadow 0 -1px 0 0 $default-main-color inset
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  transition arguments
+  -webkit-transform translateZ(0)
+  -moz-transform translateZ(0)
+  transform translateZ(0)
+// 文本单行溢出隐藏
+textoneline()
+  overflow hidden
+  white-space nowrap
+  text-overflow ellipsis
+  /* 文本多行溢出隐藏  -webkit-line-clamp: 2; 溢出行数 */
+textmoreline()
+  display -webkit-box
+  -webkit-box-orient vertical
+  overflow hidden
+  text-overflow ellipsis
+  -webkit-line-clamp 2

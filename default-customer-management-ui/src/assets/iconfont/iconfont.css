@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1574737414094");
+  /* IE9 */
+  src: url("iconfont.eot?t=1574737414094#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("data:application/x-font-woff2;charset=utf-8;base64,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")
+      format("woff2"),
+    url("iconfont.woff?t=1574737414094") format("woff"),
+    url("iconfont.ttf?t=1574737414094") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+      url("iconfont.svg?t=1574737414094#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 上传 */
+.icon-shangchuan:before {
+  content: "\e62d";
+}
+
+/* 删除 */
+.icon-shanchu:before {
+  content: "\e612";
+}
+
+/* 添加 */
+.icon-lujing:before {
+  content: "\e601";
+}
+
+/*
+  三条杠
+ */
+.icon-icon-test:before {
+  content: "\e600";
+  color: #2296f3;
+  cursor: pointer;
+}
+
+.icon-huabanfuben:before {
+  content: "级";
+  font-size: 14px;
+}
+
+/* 温度 和 距离 和 现场人员被困人数 和 百分比 和 项 */
+
+.icon-juli,
+.icon-wendu,
+.icon-baifenbi,
+.icon-xiang {
+  position: relative;
+}
+
+.icon-wendu::after {
+  content: "\e79b";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+.icon-juli::after {
+  content: "公里";
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+.icon-time::after {
+  content: "分钟";
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+.icon-people::after {
+  content: "人";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+
+.icon-baifenbi::after {
+  content: "%";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+
+.icon-xiang::after {
+  content: "项";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+
+/* 选中√ */
+.icon-xuanzhong:before {
+  content: "\e61a";
+  color: #01bcd5;
+}
+
+/* 更多。。。 */
+.icon-gengduo:before {
+  content: "\e63c";
+  color: #ffc108;
+}
+
+/* 返回 */
+.icon-fanhui:before {
+  content: "\e63d";
+  color: #ea1f62;
+}
+
+/* 警告！ */
+.icon-jinggao:before {
+  content: "\e642";
+  color: #fb5f3f;
+}
+
+/* 问号？ */
+.icon-wenhao:before {
+  content: "\e648";
+  color: #fb5938;
+}
+
+/* i */
+.icon-xiangqing:before {
+  content: "\e64a";
+}

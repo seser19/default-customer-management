@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Icon-zhongzhi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-846.000000, -252.000000)" fill="#FD2511" fill-rule="nonzero">
+            <g id="Icon-zhongzhi" transform="translate(846.000000, 252.000000)">
+                <path d="M8,0 C12.418,0 16,3.582 16,8 C16,12.418 12.418,16 8,16 C3.582,16 0,12.418 0,8 C0,3.582 3.582,0 8,0 Z M4,9 L11.824,9 C12.3762847,9 12.824,8.55228475 12.824,8 C12.824,7.44771525 12.3762847,7 11.824,7 L4,7 C3.44771525,7 3,7.44771525 3,8 C3,8.55228475 3.44771525,9 4,9 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

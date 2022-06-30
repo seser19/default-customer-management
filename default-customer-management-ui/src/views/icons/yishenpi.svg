@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Icon-yishenpi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-79.000000, -251.000000)" fill="#437FDF" fill-rule="nonzero">
+            <g id="已审批" transform="translate(79.000000, 249.000000)">
+                <g id="Icon-yishenpi" transform="translate(0.000000, 2.000000)">
+                    <path d="M8,0 C12.462,0 16,3.547 16,8 C16,12.453 12.453,16 8,16 C3.547,16 0,12.453 0,8 C0,3.547 3.538,0 8,0 Z M12.762,6.055 C12.987,5.825 13.104,5.475 12.879,5.245 C12.655,5.007 12.313,4.896 12.089,5.126 L6.943,9.621 L5.03,7.323 C4.806,7.084 4.465,6.973 4.24,7.203 C4.007,7.433 3.899,7.783 4.123,8.013 L6.252,10.77 C6.359,10.88 6.584,11 6.701,11 C6.925,11 7.033,11 7.15,10.88 L12.762,6.055 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
